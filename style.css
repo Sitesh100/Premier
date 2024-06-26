@@ -1,0 +1,566 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: #f8f8f8;
+    position: relative;
+    padding-top: 0.5px;
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background: crimson; */
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h2{
+    /* background: royalblue; */
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 25px;
+    font-weight: 600;
+}
+#nav h1{
+    /* background: royalblue; */
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Monument;
+    font-size: 35px;
+    position: relative;
+    letter-spacing: -2px;
+}
+#nav h1::after{
+    content: '©️';
+    font-weight: 300;
+    position: absolute;
+    top: 13%;
+    left:85%;
+    font-size: 20px;
+}
+#nav h1::before{
+    content: 'model management';
+    font-weight: 500;
+    position: absolute;
+    bottom: 15%;
+    right: 19%;
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 0.1px;
+}
+#nav h2:nth-last-child(2){
+    width: 25%;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#center{
+    height: 90%;
+    width: 100%;
+    /* background: red; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    width: 100%;
+    height: 50%;
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    padding: 1.5vw;
+    color: #f8f8f8;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+#over1 h1{
+    font-family: Monument;
+    font-size: 2.8vw;
+    /* mix-blend-mode: difference;//very good effect for the text on video */
+}
+#over1 h2{
+   padding: 1.3vw 1.5vw;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    /* background: blue; */
+    border: 1px solid white;
+    border-bottom: 3px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.2vw 0;
+}
+#over2 h4{
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: Monument;
+}
+#over2 img{
+    height: 3.5vw;
+}
+#scroll{
+    width: 100%;
+    height: 40vh;
+    /* background: red; */
+    white-space:nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#container{
+    width: 105%;
+    height: 100%;
+    padding: 1vw;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 80%;
+    border-radius: 50%;
+    width: 14.3%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabets{
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#alphabets h5{
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: monument;
+    font-style:italic ;
+    border-bottom: 2px solid black;
+}
+#alphabets h6{
+    font-size: .8vw;
+    font-weight: 100;
+    font-family: monument;
+    font-style:italic ;
+    padding: 0.5vw 0.7vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+#alphabets h6:hover{
+    border: 1px solid black;
+}
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    position: relative;
+}
+#right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1627902497480-cb5670a8138e?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:30%;
+}
+#left{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 3vw;
+}
+#left img{
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    object-position: ;
+}
+#text-contain{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+#text-contain h4{
+    margin-top: 19px;
+    font-family: Gilroy;
+    font-size: 24px;
+    line-height: 3.8vh;
+    font-weight: 600;
+}
+#text-contain p{
+    font-family: gilroy;
+    font-size: 15px;
+    margin-top: -35px;
+    font-weight: 500;
+}
+#page3{
+    width: 100%;
+    height: 100%;
+    padding: 3vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3-left{
+    width: 35%;
+    height: 100%;
+}
+#page3-left img{
+    margin-top: 160px;
+    margin-left: 100px;
+    height: 280px;
+    width: 280px;
+}
+
+#page3-left h3{
+    margin-top: 160px;
+    margin-left: 40px;
+    height: 280px;
+    width: 280px;
+    font-weight: 500;
+    font-size: 20px;
+}
+#page3-right{
+    width: 60%;
+    height: 100%;
+}
+
+#page3-right img{
+    margin-top: 50px;
+    margin-left: -30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page4{
+    width: 100%;
+    height: 100%;
+    padding: 3vw 5vw;
+}
+#page4-center{
+    margin-top: 50px;
+    width:100%;
+    height: 88%;
+    background: red;
+}
+#page4-center img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page5{
+    width: 100%;
+    height: 100%;
+    padding: 3vw 5vw;
+}
+#page5>h1{
+    font-size: 32px;
+    text-align: center;
+    font-family: monument;
+    font-weight: 900;
+    margin-bottom: 11vh;
+}
+.elm{
+    position: relative;
+    height: 15vh;
+    width: 100%;
+    /* background: rosybrown; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elm img{
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    left: 10%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 99;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    transform: rotate(10deg);
+}
+.elm h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 7%;
+    /* background: red; */
+}
+.elm-part{
+    width: 50%;
+}
+.elm-part h1{
+    font-size: 2.6vw;
+    font-weight: 600;
+}
+.elm-part h5{
+    font-size: .7vw;
+    font-weight: 500;
+}
+.elm:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elm:nth-last-child(1) img{
+    left:50%;
+    transform: rotate(-10deg);
+    
+}
+.elm:nth-last-child(3) img{
+    left:50%;
+    transform: rotate(-10deg);
+}
+.elm:hover img{
+    opacity: 1;
+    left:20%
+}
+#page6{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    padding: 3vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+#page6-left{
+    width: 40%;
+    height: 100%;
+}
+#page6-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page6-right{
+    width: 50%;
+    height: 100%;
+}
+#page6-right h2{
+    font-family: monument;
+    font-size: 28px;
+}
+#page6-right h3{
+    width: 40%;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#page6-right p{
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+#page6-right .right-img{
+    width: 100%;
+    height: 60%;
+    /* background: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#page6-right .right-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page7{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#marque{
+    height: 10vh;
+    width: 100%;
+    /* background: crimson; */
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-top: 7.5px;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-weight: 500;
+    cursor:grab;
+}
+#marque h1:hover{
+    color: black;
+    -webkit-text-stroke: 2px white;
+    font-weight: 500;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+#textarea{
+    width: 100%;
+    height: calc(100% - 10vh);
+    /* background: red; */
+    padding: 3vw 5vw;
+    display: flex;
+    gap: 50px;
+}
+#left-text{
+    height: 100%;
+    width: 20%;
+}
+#left-text h1{
+    font-family: monument;
+    margin-top: 50px;
+}
+#center-text{
+    width: 35%;
+    height: 100%;
+    
+}
+#center-text h3{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 33px;
+}
+#center-text img{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    overflow: hidden;
+}
+#right-text{
+    width: 35%;
+    height: 100%;
+}
+#right-text h3{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#right-text img{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 32%;
+
+}
+#content{
+    position: relative;
+  width: 100%;
+  height: 90%;
+  padding: 0vw 5vw;
+  border-top: 2px solid black;
+  border-bottom: 2px  solid black;
+  display: flex;
+  justify-content: space-between;
+}
+#content{
+    /* background: royalblue; */
+    border: 1px solid black;
+    padding: 2vw 5vw;
+    height: 100%;
+}
+#content h1{
+    position: absolute;
+    letter-spacing: -2px;
+}
+#content h2{
+    font-weight: 500;
+    margin-left: 20%;
+
+}
+#content h1::after{
+    content: '©️';
+    font-weight: 300;
+    position: absolute;
+    top: 0%;
+    left:100%;
+    font-size: 20px;
+}
+#content>h1::before{
+    content: 'model management';
+    font-weight: 500;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 0.1px;
+}
